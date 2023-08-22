@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
+<html>
+  <head>
+    <title>Student ID Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+      
+      h1 {
+        color: #0040ff;
+        text-align: center;
+      }
+      
+      form {
+        width: 50%;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+      }
+      
+      input[type="text"], input[type="password"], select {
+        width: 95%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #f2f2f2;
+        margin-bottom: 20px;
+      }
+      
+      button[type="submit"] {
+        background-color: #0040ff;
+        color: #ffffff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      button[type="submit"]:hover {
+        background-color: #002080;
+      }
+      .bg{
+        background-image: url(img/background.jpg);
+      }
+    </style>
+  </head>
+  <body class="showcase">
+    <form class="content-form">
+      <h1 class="headline">Buy Membership</h1>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Please select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      
+      <label for="Phone No">Phone No:</label>
+      <input type="text" id="city" name="city" required>
+      
+      <label for="branch">Select Membership:</label>
+      <select id="branch" name="branch" required>
+        <option value="">Please select</option>
+        <option value="Basic">Basic</option>
+        <option value="Standard">Standard</option>
+        <option value="Prenium">Prenium</option>
+      </select>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <button type="submit">Buy</button>
+    </form>
+  </body>
+</html>
